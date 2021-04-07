@@ -1,0 +1,36 @@
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+.material-icons {
+  user-select: none;
+  font-size: 4rem;
+}
+
+.small-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.medium-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.large-icon {
+  width: 5rem !important;
+  height: 5rem !important;
+}
+
+.roundy-icon {
+  border-radius: 100%;
+}
+
+.animated-icon {
+  transition: 0.3s transform ease !important;
+
+  &:hover {
+    transform: scale(1.1) rotateZ(10deg);
+  }
+}

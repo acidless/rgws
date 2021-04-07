@@ -1,0 +1,52 @@
+@import "core/variables";
+
+/*====================*/
+
+@font-face {
+  font-family: Archive;
+  src: url("/fonts/Archive.otf") format("otf");
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  transition: 0.3s width ease;
+}
+::-webkit-scrollbar-track {
+  background: var(--text-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+  font-family: Archive, sans-serif;
+  background: white;
+}
+body {
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1;
+}
+
+@import "core/typography";
+@import "core/images-icons";
+@import "core/blocks";
+@import "core/buttons-links";
+@import "core/inputs";
+@import "core/forms";
+@import "core/animations";
+@import "core/flex";
+@import "pages/pages";
+@import "Components/components";
+
+@import "core/media";

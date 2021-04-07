@@ -1,0 +1,43 @@
+.technologies {
+  padding: 3em 0 5em 0;
+
+  &__slider {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.8s opacity ease-in-out;
+
+    &.active {
+      animation: 0.8s GoFromDown ease-in-out;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .slider {
+      background: var(--text-color);
+      border-radius: 2em;
+
+      .slider__inner > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .image-wrapper {
+          flex-direction: column;
+          padding: 2em;
+          width: 85%;
+
+          h3 {
+            color: var(--paragraph-color);
+            font-size: 5em;
+          }
+
+          img {
+            width: auto;
+            height: 30em;
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
+  }
+}

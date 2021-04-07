@@ -1,0 +1,46 @@
+.main-info {
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+
+  &__content {
+    flex-direction: column;
+    align-items: center;
+
+    .main-info__scroll-down {
+      position: absolute;
+      bottom: 0;
+      animation: 3s Pulse infinite linear;
+
+      transition: 0.3s transform ease-in-out;
+
+      span {
+        font-size: 2.5em;
+      }
+
+      &:hover {
+        animation: none;
+        transform: scale(1.2);
+      }
+    }
+
+    h1,
+    p {
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 20em;
+      user-select: none;
+      font-family: Archive, sans-serif;
+      color: white;
+      font-weight: bold;
+    }
+    p {
+      text-align: center;
+      font-size: 5em;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}

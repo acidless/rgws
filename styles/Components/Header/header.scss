@@ -1,0 +1,50 @@
+.header {
+  padding: 0.5em 2em;
+  background: white;
+
+  &__logo {
+    position: relative;
+    padding: 0.25em 0;
+
+    &:hover {
+      svg circle {
+        r: 5;
+      }
+    }
+
+    img {
+      height: 50px;
+      width: auto;
+    }
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: -15%;
+      width: 130%;
+      height: 100%;
+
+      circle {
+        transition: 0.3s all ease-in-out;
+      }
+    }
+  }
+
+  &__mobile-nav {
+    display: none;
+
+    .header__mobile-nav-button span {
+      color: var(--paragraph-color);
+    }
+  }
+
+  &__nav {
+    a {
+      font-family: Archive, sans-serif;
+
+      &:not(:last-child) {
+        margin-right: 1em;
+      }
+    }
+  }
+}

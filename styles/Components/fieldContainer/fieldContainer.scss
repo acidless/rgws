@@ -1,0 +1,30 @@
+@import "fieldContainerError/fieldContainerError";
+
+.input-wrapper {
+  width: 100%;
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  .content {
+    position: absolute;
+    right: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.error input {
+    padding-left: 2em;
+  }
+
+  &.error textarea {
+    padding-left: 3em;
+  }
+
+  &.padding input,
+  &.padding textarea {
+    padding-right: 2.5em;
+  }
+}

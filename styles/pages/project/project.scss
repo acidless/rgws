@@ -1,0 +1,25 @@
+.project-wrapper {
+  &__main-info {
+    .slider {
+      margin-bottom: 2em;
+
+      &,
+      &__inner > div {
+        width: 100em;
+        height: 56em;
+      }
+    }
+  }
+
+  &__info {
+    .project-wrapper__repository-link {
+      font-size: 1em;
+      margin-left: 0.25em;
+    }
+
+    span {
+      font-size: 1.2em;
+      margin-right: 0.25em;
+    }
+  }
+}

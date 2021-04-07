@@ -1,0 +1,10 @@
+@import "contact/contact";
+@import "sendMessage/sendMessage";
+
+.contacts__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15em);
+  grid-template-rows: 15em;
+  grid-gap: 7em;
+}

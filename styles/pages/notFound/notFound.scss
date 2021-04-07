@@ -1,0 +1,33 @@
+@import "../../core/mixins";
+
+.not-found {
+  h2,
+  a {
+    @include volumeric-shadow();
+  }
+
+  h2 {
+    font-size: 15em;
+    color: var(--text-color);
+  }
+
+  p {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Archive, sans-serif;
+    margin-bottom: 1em;
+  }
+
+  a {
+    span {
+      cursor: pointer;
+      font-size: 5em;
+      animation: 15s Spin infinite linear;
+      transition: 0.3s font-size ease-in-out;
+    }
+
+    &:hover span {
+      font-size: 6em;
+    }
+  }
+}

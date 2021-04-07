@@ -1,0 +1,26 @@
+@import "project/project";
+
+.projects {
+  p {
+    margin: 0;
+
+    a {
+      font-size: 1em;
+      text-decoration: underline;
+    }
+  }
+  &__content {
+    justify-content: center;
+    flex-wrap: wrap;
+    visibility: hidden;
+
+    &.active {
+      visibility: visible;
+      animation: GoFromDown 0.8s ease-in-out;
+
+      .project {
+        animation: FadeIn 0.8s ease-in-out;
+      }
+    }
+  }
+}

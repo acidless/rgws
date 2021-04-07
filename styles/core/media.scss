@@ -1,0 +1,145 @@
+@media screen and (max-width: 1200px) {
+  .project__main-info .slider {
+    &,
+    &__inner > div {
+      width: 70em;
+      height: 40em;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 9px;
+  }
+
+  .project__main-info .slider {
+    &,
+    &__inner > div {
+      width: 50em;
+      height: 28em;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+
+  .slider {
+    .slider__controls {
+      button span {
+        font-size: 2em;
+      }
+    }
+
+    &__prev-btn {
+      left: -3em;
+    }
+
+    &__next-btn {
+      right: -3em;
+    }
+  }
+
+  .project__main-info .slider {
+    &,
+    &__inner > div {
+      width: 30em;
+      height: 17em;
+    }
+  }
+
+  .header {
+    position: relative;
+
+    &__mobile-nav {
+      display: block;
+    }
+
+    &__nav {
+      opacity: 0;
+      pointer-events: none;
+      flex-direction: column;
+      position: absolute;
+      transform-origin: top;
+      top: 100%;
+      right: 0;
+      background: white;
+      z-index: 10;
+      padding: 2em;
+      transition: 0.3s opacity ease-in-out;
+
+      a:not(:last-child) {
+        margin-bottom: 1em;
+      }
+
+      &.active {
+        display: flex;
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  }
+
+  .main-info__content {
+    h1 {
+      font-size: 15em;
+    }
+
+    p {
+      font-size: 3em;
+    }
+  }
+  .technologies {
+    .slider {
+      width: 40em;
+
+      &__large-block .slider__inner > div {
+        width: 40em;
+        .image-wrapper {
+          width: 70%;
+
+          img {
+            width: 20em;
+            height: 20em;
+          }
+        }
+
+        h3 {
+          font-size: 5em !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 7px;
+  }
+
+  .main-info__content {
+    h1 {
+      font-size: 12em;
+    }
+
+    p {
+      font-size: 2.5em;
+    }
+  }
+
+  .technologies .slider {
+    width: 30em;
+    height: 30em;
+    &__large-block .slider__inner > div {
+      width: 30em;
+      height: 30em;
+
+      img {
+        height: 15em !important;
+      }
+    }
+  }
+}

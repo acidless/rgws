@@ -1,0 +1,26 @@
+@import "fieldContainerErrorButton/fieldContainerErrorButton";
+@import "../../../core/mixins";
+
+.error-block {
+  position: absolute;
+  bottom: calc(50% + 2em);
+  left: 0;
+  background: var(--color-active);
+  border-bottom: 1px solid var(--text-color);
+  padding: 0.25em 0.5em;
+  font-weight: 400;
+  color: var(--text-color);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s all ease;
+  font-size: 1.5em;
+
+  &::after {
+    @include triangle("top", var(--color-active), 1em, 100%, 0.7em);
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}

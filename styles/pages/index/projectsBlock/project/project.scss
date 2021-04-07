@@ -1,0 +1,37 @@
+.project {
+  width: 35em;
+  height: 20em;
+  position: relative;
+  margin: 5em;
+  border-bottom: 0.5em solid transparent;
+  transition: 0.3s border-bottom ease-in-out;
+
+  &:hover {
+    border-bottom: 0.5em solid var(--blue);
+
+    .project__info {
+      opacity: 1;
+    }
+  }
+
+  a {
+    display: block;
+  }
+
+  &__info {
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s opacity ease-in-out;
+    justify-content: center;
+    flex-direction: column;
+
+    h3,
+    p {
+      color: white;
+    }
+  }
+}

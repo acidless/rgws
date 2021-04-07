@@ -1,0 +1,16 @@
+.projects-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 35em);
+  grid-gap: 5em;
+  justify-content: center;
+  animation: 0.8s GoFromDown ease-in-out;
+
+  .project {
+    margin: 0;
+    animation: 0.8s FadeIn ease-in-out;
+
+    &:hover {
+      border-bottom: 0.5em solid var(--text-color);
+    }
+  }
+}
